@@ -8,4 +8,4 @@ Those instructions are on the "wp-send.js" comments. But, bassicaly you just hav
 To run the project, you just need to install de dependencies of node using "npm install" command and then run "protractor config.js".
 
 ## How does it work?
-Protractor will open a Google Chrome window, go to Whatsapp website, click on the contact you configured, type the message and send it.
+Protractor will open a Google Chrome window, go to Whatsapp website, ask for you to read QR code using Whatsapp mobile app, click on the contact you configured, type the message and send it.
