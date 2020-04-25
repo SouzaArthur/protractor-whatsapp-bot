@@ -2,7 +2,7 @@
 This is a very basic protractor project, that I just made for fun, used to send lots of sequencial messages on whatsapp web.
 
 ## How to configure the project? 
-You just need to change de values of the "contactName" and "message" variables.
+You just need to change the values of "contactName" and "message" variables.
 
 ## How to run the project?
 To run the project, you just need to install nodejs and then run these comments on your terminal:
