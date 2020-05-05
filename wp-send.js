@@ -1,5 +1,5 @@
 //This code was made considering whatsapp web in english, if you are using it in portuguese or some other language, 
-// just change the selectors in code
+// just change the selectors in code that use text as selector
 
 describe('Sending message on whatsapp web', function() {
     
@@ -11,8 +11,8 @@ describe('Sending message on whatsapp web', function() {
         browser.sleep(8000)
 
         //Contact and message informations
-        contactName = "Test chat"
-        message = "Hello"
+        contactName = "Contato"
+        message = "Mensagem"
 
         //Searching for the contact name
         searchFieldButton = element(by.xpath('//span[@data-icon="search"]'));
@@ -30,10 +30,11 @@ describe('Sending message on whatsapp web', function() {
         for(i = 0; i <= 1000; i++){
             typeMessage = element(by.cssContainingText('._3F6QL._2WovP', 'Type a message'));
             typeMessage.click();
+            browser.sleep(200)
             typeMessage.sendKeys(message);
-            browser.sleep(500);
-            element(by.css('._1Plpp')).sendKeys(protractor.Key.ENTER);
-            browser.sleep(500);
+            browser.sleep(1000);
+            element(by.xpath("//span[@data-icon='send']")).click()
+            browser.sleep(700);
         }
   
     });
