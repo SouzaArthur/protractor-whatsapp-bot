@@ -11,7 +11,7 @@ To run the project, you just need to install nodejs and then run these comments 
     webdriver-manager update
     webdriver-manager start
 
-and then run "protractor config.js".
+and then run "protractor conf.js".
 
 ## How does it work?
 Protractor will open a Google Chrome window, go to Whatsapp website, ask for you to read QR code using Whatsapp mobile app (you have 8 seconds to read it, otherwise, the window will close and the code will fail), search for the contact, click on the contact name, type the message and send it.
